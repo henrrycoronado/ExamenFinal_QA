@@ -56,7 +56,10 @@ export const config = {
   "appium:automationName": "UiAutomator2",
   "appium:deviceName": "EquipoLocal",
   "appium:udid": "114593744C105036",
-  "appium:app": "C:\\Users\\HenrryCoronado\\Downloads\\TheApp.apk"
+  "appium:app": "C:\\Users\\HenrryCoronado\\Downloads\\SauceLabs.apk",
+  "appium:appPackage": "com.swaglabsmobileapp",
+  "appium:appActivity": "com.swaglabsmobileapp.MainActivity",
+  "appium:appWaitActivity": "com.swaglabsmobileapp.*"
 }],
 
     //
