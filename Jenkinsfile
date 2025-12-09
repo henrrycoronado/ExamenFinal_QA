@@ -8,7 +8,7 @@ pipeline {
         BROWSERSTACK_USERNAME = credentials('browserstack-username')
         BROWSERSTACK_ACCESS_KEY = credentials('browserstack-access-key')
         
-        APP_PATH='bs://f26d4c6e35eaf51af36717cc8a2501017fcd82b4'
+        APP_PATH='bs://e3b5a78cd2b38302b66e8f56bebaba6f5647ee9d'
     }
 
     stages {
@@ -22,7 +22,7 @@ pipeline {
         
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/rafael1199v/henry.git'
+                git branch: 'master', url: 'https://github.com/henrrycoronado/ExamenFinal_QA.git'
             }
         }
 
@@ -41,7 +41,7 @@ pipeline {
         stage('Report') {
             steps {
                 echo "Generando reporte"
-                bat "npx allure generate %ALLURE_RESULTS% -c -o %ALLURE_REPORT%"
+                bat "npx allure-commandline generate %ALLURE_RESULTS% --clean -o %ALLURE_REPORT%"
             }
         }
 

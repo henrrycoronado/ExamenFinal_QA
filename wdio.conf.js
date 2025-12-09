@@ -54,7 +54,7 @@ export const config = {
   "platformName": "Android",
   "appium:platformVersion": "15",
   "appium:automationName": "UiAutomator2",
-  "appium:deviceName": "MiCelularReal",
+  "appium:deviceName": "EquipoLocal",
   "appium:udid": "114593744C105036",
   "appium:app": "C:\\Users\\HenrryCoronado\\Downloads\\TheApp.apk"
 }],

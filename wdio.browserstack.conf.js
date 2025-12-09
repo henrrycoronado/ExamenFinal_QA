@@ -125,8 +125,8 @@ export const config = {
         browserstacklocal: true,
         accessibility: false,
         testObservabilityOptions: {
-            buildName: 'Test Henry',
-            projectName: 'Henry',
+            buildName: 'Test1',
+            projectName: 'TestFinal_QA',
             buildTag: 'Tag Test'
         }
     }]],
