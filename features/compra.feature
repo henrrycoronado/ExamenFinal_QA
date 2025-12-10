@@ -1,3 +1,4 @@
+@compra
 Feature: Flujo completo de compra (E2E)
 
   Scenario: Compra exitosa de dos productos y retorno al menú

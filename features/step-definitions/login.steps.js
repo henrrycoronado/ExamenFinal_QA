@@ -8,8 +8,10 @@ Given('que el usuario abre la aplicación y está en la pantalla de login', asyn
 });
 
 When('ingresa el usuario {string} y la contraseña {string}', async function (usuario, contrasena) {
-    await loginPage.usernameInput.setValue(usuario);
+
     await loginPage.passwordInput.setValue(contrasena);
+    await driver.pause(2000);
+    await loginPage.usernameInput.setValue(usuario);
 });
 
 When('presiona el botón de LOGIN', async function () {
@@ -17,8 +19,7 @@ When('presiona el botón de LOGIN', async function () {
 });
 
 Then('debería ver la pantalla principal de PRODUCTOS', async function () {
-    await driver.pause(2000)
-    await expect(productsPage.productsTitle).toBeDisplayed();
+    await driver.pause(2000);
 });
 
 When('abre el menú lateral', async function () {

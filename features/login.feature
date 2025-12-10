@@ -1,3 +1,4 @@
+@login
 Feature: Flujo de Login y Logout
 
 Scenario: Inicio de sesión exitoso con usuario estándar y posterior cierre de sesión

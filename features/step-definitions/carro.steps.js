@@ -3,7 +3,7 @@ import productsPage from "../pageobjects/products.page";
 import cartPage from "../pageobjects/cart.page";
 
 When('agrega el producto {string} al carrito', async function (nombreProducto) {
-    await driver.pause(2000)
+    await driver.pause(2000);
     await productsPage.addToCartBoltButton.click();
 });
 

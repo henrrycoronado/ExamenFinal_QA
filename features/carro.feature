@@ -1,3 +1,4 @@
+@carro
 Feature: Gestión del Carrito de Compras
 
   Scenario: Agregar producto al carrito, verificarlo y eliminarlo

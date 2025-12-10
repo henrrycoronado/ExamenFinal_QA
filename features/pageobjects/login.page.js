@@ -2,11 +2,11 @@ import { $ } from "@wdio/globals";
 
 class LoginPage {
     get usernameInput() {
-        return $('android=new UiSelector().description("test-Usuario")');
+        return $('~test-Usuario');
     }
 
     get passwordInput() {
-        return $('android=new UiSelector().description("test-Contraseña")');
+        return $('~test-Contraseña');
     }
 
     get loginButton() {
